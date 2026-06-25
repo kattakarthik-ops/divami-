@@ -135,21 +135,6 @@ Products  Orders  Verify  Upload
 
 
   ---
-    # Archery Shop — Specifications & Deliverables
-
-> Complete technical and functional specification for the Arrow & Arc e-commerce web application.
-
----
-
-## Table of Contents
-
-1. [Project Scope](#1-project-scope)
-2. [Functional Specifications](#2-functional-specifications)
-3. [File Upload Specifications](#3-file-upload-specifications)
-4. [Deliverables](#4-deliverables)
-5. [Acceptance Criteria](#5-acceptance-criteria)
-
----
 
 ### In Scope
 - User registration and login with role-based access
