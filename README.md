@@ -69,7 +69,66 @@ An e-commerce web application for selling imported archery equipment. Users can 
 8. Admin can view and delete uploaded videos from the dashboard
 ```
 
-</div>
+---
 
-</body>
-</html>
+# Archery Shop — Feature Flows
+
+> Visual reference for the user purchase journey and admin workflow.
+
+---
+
+## 1. User purchase flow
+
+```
+Register / Log in
+       ↓
+Browse catalog
+       ↓
+Add items to cart
+       ↓
+Payment page
+       ↓
+Upload payment proof
+       ↓
+Order ID generated
+```
+
+| Step | Action | Detail |
+|---|---|---|
+| Auth | Register / log in | JWT token issued on success |
+| Shop | Browse catalog | Search and filter by category |
+| Cart | Add items to cart | Update quantity, remove items |
+| Pay | Payment page | View UPI ID and QR code |
+| Proof | Upload payment proof | Screenshot or receipt |
+| Order | Order ID generated | Track status and add comments |
+
+---
+
+## 2. Admin workflow
+
+```
+Admin login (role-protected)
+           ↓
+     Admin dashboard
+    ↙    ↙    ↘    ↘
+Products  Orders  Verify  Upload
+                payment  video
+           ↓        ↓
+     Order detail + comment thread
+     (admin and user communicate)
+```
+
+| Action | Description |
+|---|---|
+| Manage products | Add, edit, delete products with image upload |
+| View orders | See all incoming orders with payment proof |
+| Verify payment | Approve or reject each payment manually |
+| Upload video | Tag video as Instagram / Facebook / YouTube |
+| Comment thread | Admin and user communicate below each order |
+
+---
+
+## Flow summary
+
+- **User** registers → browses → adds to cart → pays via UPI → uploads proof → gets Order ID → tracks and comments
+- **Admin** logs in → manages products → verifies payments → communicates via comments → uploads promotional videos with platform tags
