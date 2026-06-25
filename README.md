@@ -17,12 +17,8 @@ An e-commerce web application for selling imported archery equipment. Users can 
 | Frontend | React + Vite + Tailwind CSS |
 | Backend | Spring Boot (Java 17) |
 | Database | MySQL 8 |
-| ORM | Spring Data JPA + Hibernate |
-| Authentication | Spring Security + JWT |
 | File Uploads | Spring Multipart |
 | HTTP Client | Axios |
-| Frontend Hosting | Vercel |
-| Backend Hosting | Railway |
 
 ---
 
